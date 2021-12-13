@@ -7,6 +7,14 @@ export const headData = {
   description: '', // e.g: Welcome to my website
 };
 
+// HERO DATA
+export const heroData = {
+  title: '',
+  name: '',
+  subtitle: '',
+  cta: '',
+};
+
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.jpg',
@@ -20,16 +28,17 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'titelpage.jpg',
     title: 'Personal Website',
     info: 'Developed with React',
     info2: '',
     url: '#!',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: 'https://github.com/Chika2020/', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
     title: 'Stay Tuned... More Projects on the way!',
+    img: 'work.jpg',
     info: '',
     info2: '',
     url: '',
