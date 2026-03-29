@@ -1,0 +1,15 @@
+{
+  "name": "Chika Nwachukwu Portfolio",
+  "short_name": "Portfolio",
+  "start_url": "/",
+  "background_color": "#fff",
+  "theme_color": "#2E9CCA",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+}

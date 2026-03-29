@@ -7,7 +7,7 @@ const Footer = () => {
   const { networks } = footer;
 
   return (
-    <footer className="footer navbar-static-bottom">
+    <footer className="footer">
       <Container>
         {/* <span className="back-to-top">
           <Link to="hero" smooth duration={1000}>

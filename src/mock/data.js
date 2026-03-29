@@ -51,7 +51,7 @@ export const projectsData = [
   //   info: '',
   //   info2: '',
   //   url: '',
-  //   repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+  //   repo: 'https://github.com/Chika2020/', // if no repo, the button will not show up
   // },
 ];
 
@@ -73,7 +73,7 @@ export const footerData = {
     {
       id: nanoid(),
       name: 'github',
-      url: '',
+      url: 'https://github.com/Chika2020',
     },
   ],
 };
@@ -81,4 +81,37 @@ export const footerData = {
 // Github start/fork buttons
 export const githubButtons = {
   isEnabled: true, // set to false to disable the GitHub stars/fork buttons
+};
+
+// NAVBAR DATA
+export const navbarData = {
+  brand: 'CN',
+  links: [
+    { id: nanoid(), label: 'About', to: 'about' },
+    { id: nanoid(), label: 'Projects', to: 'projects' },
+    { id: nanoid(), label: 'Skills', to: 'skills' },
+    { id: nanoid(), label: 'GitHub', to: 'github' },
+    { id: nanoid(), label: 'Contact', to: 'contact' },
+  ],
+};
+
+// SKILLS DATA
+export const skillsData = {
+  title: 'Skills',
+  skills: [
+    { id: nanoid(), name: 'JavaScript', icon: 'devicon-javascript-plain' },
+    { id: nanoid(), name: 'React', icon: 'devicon-react-original' },
+    { id: nanoid(), name: 'Python', icon: 'devicon-python-plain' },
+    { id: nanoid(), name: 'Node.js', icon: 'devicon-nodejs-plain' },
+    { id: nanoid(), name: 'HTML5', icon: 'devicon-html5-plain' },
+    { id: nanoid(), name: 'CSS3', icon: 'devicon-css3-plain' },
+    { id: nanoid(), name: 'Git', icon: 'devicon-git-plain' },
+    { id: nanoid(), name: 'GitHub', icon: 'devicon-github-original' },
+  ],
+};
+
+// GITHUB STATS DATA
+export const githubData = {
+  username: 'Chika2020',
+  showStats: true,
 };

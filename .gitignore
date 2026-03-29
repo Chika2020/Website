@@ -41,7 +41,6 @@ typings/
 
 # Optional npm cache directory
 .npm
-package-lock.json
 
 # Optional eslint cache
 .eslintcache
@@ -55,12 +54,15 @@ package-lock.json
 # dotenv environment variable files
 .env*
 
-# gatsby files
-.cache/
-public
+# Vite build output
+dist/
+.vite/
 
 # Mac files
 .DS_Store
+
+#Memory of old code
+.cache/
 
 # Yarn
 yarn-error.log
