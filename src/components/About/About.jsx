@@ -1,24 +1,20 @@
 import React, { useContext, useState, useEffect } from 'react';
-import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
+import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
-import PortfolioContext from '../../context/context';
-import downloadFile from './file.pdf';
+import FadeIn from '../shared/FadeIn';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
   const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = about;
 
   const [isDesktop, setIsDesktop] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     if (window.innerWidth > 769) {
       setIsDesktop(true);
-      setIsMobile(false);
     } else {
-      setIsMobile(true);
       setIsDesktop(false);
     }
   }, []);
@@ -29,14 +25,14 @@ const About = () => {
         <Title title="About Me" />
         <Row className="about-wrapper">
           <Col md={6} sm={12}>
-            <Fade bottom duration={1000} delay={600} distance="30px">
+            <FadeIn direction="bottom" duration={1} delay={0.6}>
               <div className="about-wrapper__image">
                 <AboutImg alt="profile picture" filename={img} />
               </div>
-            </Fade>
+            </FadeIn>
           </Col>
           <Col md={6} sm={12}>
-            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+            <FadeIn direction={isDesktop ? 'left' : 'bottom'} duration={1} delay={1}>
               <div className="about-wrapper__info">
                 <p className="about-wrapper__info-text">
                   {paragraphOne || "Hi! I'm Chika Nwachukwu and welcome to my page!"}
@@ -55,7 +51,7 @@ const About = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="cta-btn cta-btn--resume"
-                      href={downloadFile}
+                      href="/file.pdf"
                       download="ChikaNwachukwuResume.pdf"
                     >
                       Resume
@@ -63,7 +59,7 @@ const About = () => {
                   </span>
                 )}
               </div>
-            </Fade>
+            </FadeIn>
           </Col>
         </Row>
       </Container>

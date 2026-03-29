@@ -1,11 +1,11 @@
 import React from 'react';
-import Fade from 'react-reveal/Fade';
 import PropTypes from 'prop-types';
+import FadeIn from '../shared/FadeIn';
 
 const Title = ({ title }) => (
-  <Fade bottom duration={1000} delay={300} distance="0px">
+  <FadeIn direction="bottom" duration={1} delay={0.3}>
     <h2 className="section-title">{title}</h2>
-  </Fade>
+  </FadeIn>
 );
 
 Title.propTypes = {
